@@ -65,6 +65,7 @@ genrule {
 
 cc_library {
     name: "libffi",
+    defaults: ["no_bti"],
     host_supported: true,
     vendor_available: true,
     cflags: [
