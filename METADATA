@@ -1,19 +1,23 @@
+# This project was upgraded with external_updater.
+# Usage: tools/external_updater/updater.sh update external/libffi
+# For more info, check https://cs.android.com/android/platform/superproject/main/+/main:tools/external_updater/README.md
+
 name: "libffi"
 description: "A portable foreign-function interface library."
 third_party {
-  url {
-    type: GIT
-    value: "https://github.com/libffi/libffi.git"
-  }
-  version: "v3.3"
   license_type: RESTRICTED
   license_note: "would be NOTICE save for:\n   .travis/\n   testsuite/lib*/\n   libtool-ldflags\n   LICENSE-BUILDTOOLS"
   security {
     tag: "NVD-CPE2.3:cpe:/a:libffi_project:libffi:3.3"
   }
   last_upgrade_date {
-    year: 2020
-    month: 3
-    day: 26
+    year: 2026
+    month: 4
+    day: 29
+  }
+  identifier {
+    type: "Git"
+    value: "https://github.com/libffi/libffi.git"
+    version: "9760868682cc9a33008761f158d86481d56738aa"
   }
 }
