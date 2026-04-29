@@ -92,6 +92,7 @@ cc_library {
         "src/java_raw_api.c",
         "src/prep_cif.c",
         "src/raw_api.c",
+        "src/tramp.c",
         "src/types.c",
     ],
     arch: {
